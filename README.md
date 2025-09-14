@@ -29,6 +29,3 @@ By analyzing **movie genres, series genres, OTT platforms, and content languages
 - Enables **OTT tie-ups** based on student preferences.  
 - Increases student engagement at the Film Fest.  
 
----
-
-## 📂 Repository Structure  
