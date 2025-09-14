@@ -64,10 +64,8 @@ The insights can help in:
 ---
 
 ## 📂 Repository Contents  
-- `data/` → Dataset (student survey responses).  
-- `notebooks/` → Jupyter notebooks (preprocessing, clustering, visualization).  
-- `images/` → Cluster plots (Elbow curve, Silhouette graph, 3D clusters).  
-- `src/` → Python scripts.  
+-  Dataset (student survey responses).  
+-  Jupyter notebooks (preprocessing, clustering, visualization).    
 - `README.md` → Project documentation.  
 
 ---
