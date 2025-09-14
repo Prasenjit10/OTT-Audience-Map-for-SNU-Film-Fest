@@ -1,31 +1,73 @@
-# 🎬 OTT Audience Map for SNU Film Fest  
+# 🎬 Clustering Students Based on OTT Viewing Preferences  
 
-## 📌 Project Overview  
-This project applies **unsupervised machine learning** to cluster SNU students based on their viewing preferences.  
-By analyzing **movie genres, series genres, OTT platforms, and content languages**, we uncover natural audience segments that can guide film screenings and OTT partnerships for the annual SNU Film Fest.  
+👨‍💻 Author  
+Prasenjit Sasmal  
+Year 3, Section 09  
+B.Tech CSE (AI-ML)  
 
 ---
 
-## 🛠️ Methods  
-- **Data Cleaning**: Standardized column names, removed extra spaces, handled missing values.  
-- **Feature Encoding**: Converted categorical data into numerical format using Label Encoding.  
-- **Clustering Algorithm**: Applied **K-Means** clustering.  
-- **Cluster Evaluation**:  
-  - *Inertia (Elbow Method)* – to determine optimal clusters.  
-  - *Silhouette Score* – to measure cluster quality.  
-- **Visualization**: 3D cluster scatter plots using Matplotlib.  
+## 🔍 Project Overview  
+The Cultural Committee at SNU is planning the annual Film Fest and wants to understand student audience segments.  
+This project applies **Unsupervised Machine Learning (Clustering)** to group students based on:  
+
+- 🎥 Movie Genre Preferences  
+- 📺 Series Genre Preferences  
+- 🌐 OTT Platform Choices  
+- 🗣️ Content Language Preferences  
+
+The insights can help in:  
+- Planning screenings that match student interests.  
+- Designing theme-based festival nights.  
+- Building OTT tie-ups with the right platforms.  
+
+---
+
+## 🛠️ Methodology  
+
+### Data Preprocessing  
+- Cleaned and normalized text data.  
+- Stripped whitespace and standardized column names.  
+- Encoded categorical features using **Label Encoding**.  
+
+### Clustering Approach  
+- **Algorithm**: K-Means Clustering  
+- **Cluster Range Tested**: k = 2 to 7  
+- **Evaluation**:  
+  - *Inertia (Elbow Method)* → to find the elbow point.  
+  - *Silhouette Score* → to measure cluster quality.  
+
+### Visualization  
+- Used **3D scatter plots (Matplotlib)** to display clusters.  
 
 ---
 
 ## 📊 Results  
-- Optimal number of clusters: **4**.  
-- Identified distinct audience groups (e.g., Bollywood lovers, regional content fans, global OTT users).  
-- **Visualized 3D clusters** to interpret group separation.  
+- **Optimal number of clusters (k): 4**  
+- **Audience groups identified**:  
+  1. Bollywood Lovers  
+  2. Regional Content Fans  
+  3. Global OTT Enthusiasts  
+  4. Mixed-Interest Viewers  
+- **Inertia analysis** showed a clear elbow at k=4.  
+- **Silhouette Score** indicated moderate separation between groups.  
+- **3D visualization** highlighted meaningful audience clusters.  
 
 ---
 
-## 🎯 Impact  
-- Helps the **Cultural Committee** design theme-based screenings.  
-- Enables **OTT tie-ups** based on student preferences.  
-- Increases student engagement at the Film Fest.  
+## 🎯 Key Insights  
+- Students have **diverse but overlapping OTT preferences**.  
+- Clustering helps in **curating film nights** (Bollywood, Regional, Global).  
+- Supports **OTT collaborations** (Netflix, Prime, Hotstar, etc.).  
+- Ensures **higher student engagement** at the Film Fest.  
 
+---
+
+## 📂 Repository Contents  
+- `data/` → Dataset (student survey responses).  
+- `notebooks/` → Jupyter notebooks (preprocessing, clustering, visualization).  
+- `images/` → Cluster plots (Elbow curve, Silhouette graph, 3D clusters).  
+- `src/` → Python scripts.  
+- `README.md` → Project documentation.  
+
+---
